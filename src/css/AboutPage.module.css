@@ -1,0 +1,311 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.sectionBox {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+  padding: 1.25rem;
+}
+
+:global(.dark) .sectionBox {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #1e293b 100%);
+}
+
+@media (min-width: 576px) {
+  .sectionBox {
+    padding: 1.75rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .sectionBox {
+    padding: 2.25rem;
+  }
+}
+
+.blob {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 999px;
+  filter: blur(48px);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.blobRight {
+  top: -7rem;
+  right: -7rem;
+  background: rgba(255, 122, 24, 0.55);
+}
+
+.blobLeft {
+  bottom: -7rem;
+  left: -7rem;
+  background: rgba(255, 211, 77, 0.55);
+}
+
+:global(.dark) .blobRight {
+  background: rgba(255, 122, 24, 0.18);
+}
+
+:global(.dark) .blobLeft {
+  background: rgba(255, 211, 77, 0.12);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--md-cream);
+  color: #c2410c;
+  font-weight: 900;
+  border: 1px solid rgba(255, 122, 24, 0.25);
+  padding: 0.2rem 0.75rem;
+  font-size: 0.75rem;
+}
+
+:global(.dark) .badge {
+  background: rgba(255, 122, 24, 0.12);
+  color: rgba(255, 237, 213, 0.95);
+  border-color: rgba(255, 122, 24, 0.2);
+}
+
+.h1 {
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.sub {
+  color: rgba(39, 39, 42, 0.7);
+}
+
+:global(.dark) .sub {
+  color: rgba(244, 244, 245, 0.72);
+}
+
+.btnWhatsapp {
+  border-radius: 999px;
+  background: var(--md-green);
+  border: none;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.btnWhatsapp:hover {
+  filter: brightness(0.98);
+}
+
+.btnSecondary {
+  border-radius: 999px;
+  background: #ffffff;
+  color: #111827;
+  font-weight: 900;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+:global(.dark) .btnSecondary {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #1e293b 100%);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+:global(.dark) .btnSecondary:hover {
+  background: linear-gradient(135deg, #334155 0%, #1e293b 50%, #334155 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.statCard {
+  border-radius: 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+}
+
+:global(.dark) .statCard {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+.statTitle {
+  font-weight: 900;
+  font-size: 0.75rem;
+}
+
+.statSub {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: rgba(39, 39, 42, 0.7);
+}
+
+:global(.dark) .statSub {
+  color: rgba(244, 244, 245, 0.72);
+}
+
+.mediaCard {
+  border-radius: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+  padding: 1.25rem;
+}
+
+:global(.dark) .mediaCard {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #1e293b 100%);
+}
+
+.mediaRatio {
+  position: relative;
+  width: 100%;
+  padding-top: 62.5%;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+
+.mediaImg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mediaCaption {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: rgba(39, 39, 42, 0.7);
+}
+
+:global(.dark) .mediaCaption {
+  color: rgba(244, 244, 245, 0.72);
+}
+
+.h2 {
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.processNote {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: rgba(39, 39, 42, 0.7);
+}
+
+:global(.dark) .processNote {
+  color: rgba(244, 244, 245, 0.72);
+}
+
+.processCard {
+  position: relative;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+  padding: 1.25rem;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.08);
+}
+
+:global(.dark) .processCard {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #1e293b 100%);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.3);
+}
+
+.stepImgWrap {
+  position: relative;
+  width: 100%;
+  padding-top: 75%;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: var(--md-cream);
+}
+
+.stepImg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+:global(.dark) .stepImgWrap {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(30, 41, 59, 0.4);
+}
+
+.stepNum {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  background: var(--md-cream);
+  color: #c2410c;
+  font-weight: 900;
+}
+
+:global(.dark) .stepNum {
+  background: rgba(255, 122, 24, 0.12);
+  color: rgba(255, 237, 213, 0.95);
+}
+
+.stepTitle {
+  font-weight: 900;
+}
+
+.stepText {
+  margin-top: 0.5rem;
+  color: rgba(39, 39, 42, 0.7);
+}
+
+:global(.dark) .stepText {
+  color: rgba(244, 244, 245, 0.72);
+}
+
+.arrow {
+  color: rgba(161, 161, 170, 1);
+}
+
+:global(.dark) .arrow {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.promiseCard {
+  border-radius: 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+  padding: 1.25rem;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.08);
+}
+
+:global(.dark) .promiseCard {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #1e293b 100%);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.3);
+}
+
+.promiseTitle {
+  font-weight: 900;
+}
+
+.promiseText {
+  margin-top: 0.5rem;
+  color: rgba(39, 39, 42, 0.7);
+}
+
+:global(.dark) .promiseText {
+  color: rgba(244, 244, 245, 0.72);
+}

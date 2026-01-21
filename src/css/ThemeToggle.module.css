@@ -1,0 +1,26 @@
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  color: #111827;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+.toggle:hover {
+  background: #f9fafb;
+}
+
+:global(.dark) .toggle {
+  border-color: rgba(255, 255, 255, 0.15);
+  background: #030712;
+  color: #ffffff;
+}
+
+:global(.dark) .toggle:hover {
+  background: rgba(255, 255, 255, 0.05);
+}

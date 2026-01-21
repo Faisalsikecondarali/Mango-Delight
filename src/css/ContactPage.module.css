@@ -1,0 +1,92 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.sectionBox {
+  border-radius: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+  padding: 1.25rem;
+}
+
+:global(.dark) .sectionBox {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #1e293b 100%);
+}
+
+@media (min-width: 576px) {
+  .sectionBox {
+    padding: 1.75rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .sectionBox {
+    padding: 2.25rem;
+  }
+}
+
+.title {
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.sub {
+  color: rgba(39, 39, 42, 0.7);
+}
+
+:global(.dark) .sub {
+  color: rgba(244, 244, 245, 0.72);
+}
+
+.formNote {
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.formSub {
+  color: rgba(39, 39, 42, 0.7);
+}
+
+:global(.dark) .formSub {
+  color: rgba(244, 244, 245, 0.72);
+}
+
+.whatsapp {
+  font-weight: 800;
+  color: #111827;
+}
+
+:global(.dark) .whatsapp {
+  color: #ffffff;
+}
+
+.infoCard {
+  border-radius: 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+  padding: 1.25rem;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.08);
+}
+
+:global(.dark) .infoCard {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #1e293b 100%);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.3);
+}
+
+.infoTitle {
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+.infoText {
+  margin-top: 0.5rem;
+  color: rgba(39, 39, 42, 0.7);
+}
+
+:global(.dark) .infoText {
+  color: rgba(244, 244, 245, 0.72);
+}

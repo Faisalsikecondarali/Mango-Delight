@@ -1,0 +1,92 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.sectionBox {
+  border-radius: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+  padding: 1.25rem;
+}
+
+:global(.dark) .sectionBox {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgb(9, 9, 11);
+}
+
+@media (min-width: 576px) {
+  .sectionBox {
+    padding: 1.75rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .sectionBox {
+    padding: 2.25rem;
+  }
+}
+
+.title {
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.sub {
+  color: rgba(39, 39, 42, 0.7);
+}
+
+:global(.dark) .sub {
+  color: rgba(244, 244, 245, 0.72);
+}
+
+.fwBold {
+  font-weight: 900;
+}
+
+.infoCard {
+  border-radius: 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+  padding: 1.25rem;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.08);
+}
+
+:global(.dark) .infoCard {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgb(9, 9, 11);
+}
+
+.infoTitle {
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+.infoText {
+  margin-top: 0.5rem;
+  color: rgba(39, 39, 42, 0.7);
+}
+
+:global(.dark) .infoText {
+  color: rgba(244, 244, 245, 0.72);
+}
+
+.codeBox {
+  overflow: hidden;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: var(--md-cream);
+  color: #111827;
+  padding: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  max-height: 520px;
+  overflow-y: auto;
+}
+
+:global(.dark) .codeBox {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(244, 244, 245, 0.88);
+}

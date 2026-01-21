@@ -1,0 +1,57 @@
+.section {
+  display: block;
+}
+
+.title {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.sub {
+  color: rgba(39, 39, 42, 0.7);
+}
+
+:global(.dark) .sub {
+  color: rgba(244, 244, 245, 0.72);
+}
+
+.card {
+  border-radius: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+  padding: 1.25rem;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.08);
+}
+
+:global(.dark) .card {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #1e293b 100%);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.3);
+}
+
+.stars {
+  display: inline-flex;
+  gap: 0.125rem;
+  color: #ff7a18;
+}
+
+.quote {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: rgba(39, 39, 42, 0.78);
+}
+
+:global(.dark) .quote {
+  color: rgba(244, 244, 245, 0.78);
+}
+
+.by {
+  margin-top: 0.75rem;
+  font-weight: 800;
+  font-size: 0.8rem;
+  color: rgba(17, 24, 39, 0.95);
+}
+
+:global(.dark) .by {
+  color: rgba(255, 255, 255, 0.95);
+}

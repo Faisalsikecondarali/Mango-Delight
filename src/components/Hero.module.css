@@ -1,0 +1,123 @@
+.heroSection {
+  width: 100%;
+}
+
+.heroContainer {
+  display: block;
+}
+
+.badge {
+  display: inline-flex;
+  font-size: clamp(0.625rem, 1.6vw, 0.75rem);
+  padding: 0.125rem clamp(0.5rem, 2vw, 0.75rem);
+}
+
+.primaryBtn {
+  display: inline-flex;
+  font-size: clamp(0.75rem, 1.8vw, 0.875rem) !important;
+  height: clamp(2.5rem, 6vw, 3.5rem) !important;
+}
+
+.secondaryBtn {
+  display: inline-flex;
+  font-size: clamp(0.75rem, 1.8vw, 0.875rem) !important;
+  height: clamp(2.5rem, 6vw, 3.5rem) !important;
+}
+
+.infoGrid {
+  display: grid;
+  gap: clamp(0.5rem, 1.5vw, 1rem);
+}
+
+.infoCard {
+  display: block;
+  padding: clamp(0.5rem, 2vw, 1rem) !important;
+}
+
+.rightCta {
+  display: inline-flex;
+  font-size: clamp(0.75rem, 1.8vw, 0.875rem) !important;
+  height: clamp(2.25rem, 5.5vw, 2.75rem) !important;
+}
+
+.title {
+  font-size: clamp(1.05rem, 3.6vw, 3rem) !important;
+  line-height: 1.15 !important;
+}
+
+.desc {
+  font-size: clamp(0.8125rem, 2.2vw, 1.05rem) !important;
+  line-height: 1.5 !important;
+}
+
+@media (max-width: 850px) {
+  .heroContainer {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .leftCol {
+    width: 100%;
+  }
+
+  .badge {
+    justify-content: center;
+  }
+
+  .heroGrid {
+    grid-template-columns: 1fr !important;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .heroGrid {
+    gap: 1.5rem !important;
+  }
+
+  .leftCol {
+    justify-self: center !important;
+    text-align: center !important;
+  }
+
+  .rightCol {
+    justify-self: center !important;
+  }
+
+  .actions {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100%;
+  }
+
+  .actions a {
+    width: 100% !important;
+  }
+
+  .infoCard p {
+    font-size: clamp(0.6875rem, 2vw, 0.75rem) !important;
+    line-height: 1.25 !important;
+  }
+
+  .rightCol {
+    width: 100%;
+  }
+
+  .rightCol > div {
+    padding: clamp(0.75rem, 2.5vw, 1rem) !important;
+  }
+
+  .rightCol p {
+    font-size: clamp(0.75rem, 2vw, 0.875rem) !important;
+    line-height: 1.35 !important;
+  }
+
+  .rightCol a {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    line-height: 1.1 !important;
+  }
+}

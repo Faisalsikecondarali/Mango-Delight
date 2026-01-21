@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <defs>
+    <linearGradient id="g" x1="48" y1="32" x2="208" y2="224" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD34D"/>
+      <stop offset="0.6" stop-color="#FFB020"/>
+      <stop offset="1" stop-color="#FF7A18"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="112" y1="24" x2="176" y2="88" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7CFF6B"/>
+      <stop offset="1" stop-color="#19B45B"/>
+    </linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <path filter="url(#s)" d="M204 103c-6-46-44-71-86-71-38 0-72 21-82 59-11 39 10 83 40 109 25 22 58 28 84 18 35-13 51-49 44-115Z" fill="url(#g)"/>
+  <path d="M154 42c12-14 28-18 46-14-2 20-10 36-22 48-11 10-25 15-42 14 2-18 8-34 18-48Z" fill="url(#leaf)"/>
+  <path d="M116 40c2-10 7-19 14-27" stroke="#177A3A" stroke-width="8" stroke-linecap="round"/>
+  <path d="M74 118c-6 34 12 66 36 86" stroke="#fff" stroke-opacity="0.45" stroke-width="10" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,133 @@
+.section {
+  border-radius: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+  padding: 1.25rem;
+}
+
+:global(.dark) .section {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: #1e293b;
+}
+
+@media (min-width: 576px) {
+  .section {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .section {
+    padding: 3rem;
+  }
+}
+
+.headerRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 576px) {
+  .headerRow {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+
+.title {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.sub {
+  color: rgba(39, 39, 42, 0.7);
+}
+
+:global(.dark) .sub {
+  color: rgba(244, 244, 245, 0.72);
+}
+
+.link {
+  font-weight: 700;
+  color: #ff7a18;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #d65d12;
+}
+
+:global(.dark) .link {
+  color: rgba(255, 186, 120, 0.95);
+}
+
+.tableWrap {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+.table {
+  min-width: 720px;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+}
+
+/* Dark mode table background */
+:global(.dark) .table {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  background: transparent !important;
+}
+
+/* Dark mode striped rows */
+:global(.dark) .table tbody tr:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+:global(.dark) .table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02) !important;
+}
+
+/* Dark mode table cells */
+:global(.dark) .table th,
+:global(.dark) .table td {
+  color: white !important;
+  background-color: #111827;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.th {
+  font-weight: 800;
+  color: #111827;
+  white-space: nowrap;
+}
+
+:global(.dark) .th {
+  color: #ffffff;
+}
+
+.td {
+  white-space: nowrap;
+  color: #374151;
+}
+
+:global(.dark) .td {
+  color: #ffffff;
+}
+
+.orderBtn {
+  border-radius: 999px;
+  background: #ff7a18;
+  color: #ffffff;
+  font-weight: 800;
+  border: none;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+}
+
+.orderBtn:hover {
+  filter: brightness(0.98);
+}
